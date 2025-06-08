@@ -20,7 +20,7 @@ const Welcome: React.FC = () => {
           transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
           className="mb-8"
         >
-          <img src="logo.png" alt="ORN" className="w-32 h-32 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="ORN" className="w-32 h-32 object-contain" />
         </motion.div>
 
 
