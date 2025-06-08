@@ -4,7 +4,7 @@ import { ArrowLeft, ArrowRight, Camera, Upload, Ruler, Calendar, Target, Check }
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import { mockBodyTypes, mockColorPalettes } from '../mock/data';
-import { UserProfile } from '../types';
+import type { UserProfile } from '../types';
 
 const steps = [
   { id: 'profile', title: 'Perfil básico', icon: Ruler },

@@ -1,54 +1,94 @@
-# React + TypeScript + Vite
+# StyleIA - MVP Startup Weekend 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Sobre o Projeto
 
-Currently, two official plugins are available:
+StyleIA é um personal stylist com inteligência artificial que ajuda mulheres a descobrir roupas que valorizam seu corpo. Desenvolvido para o Startup Weekend Goiânia 2025 - Diversidades.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🎯 Problema
 
-## Expanding the ESLint configuration
+- 96% das mulheres sentem insegurança ao escolher roupas
+- 37% não conhecem seu tipo de corpo
+- 63% não conhecem suas cores ideais
+- 100% já desperdiçaram dinheiro com roupas erradas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 💡 Solução
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+App mobile-first que oferece:
+- Análise automática de tipo de corpo (Kibbe)
+- Cartela de cores personalizada via IA
+- Try-on AR para visualizar antes de comprar
+- Recomendações personalizadas 24/7
+
+## 🛠️ Tecnologias
+
+- **Frontend**: React + TypeScript + Vite
+- **Estilização**: Tailwind CSS
+- **Animações**: Framer Motion
+- **Deploy**: GitHub Pages / Vercel
+- **PWA**: Mobile-first com suporte offline
+
+## 📱 Funcionalidades MVP
+
+1. **Onboarding Inteligente**
+   - Coleta de dados básicos (altura, peso, idade)
+   - Upload de fotos para análise
+   - Definição de objetivos pessoais
+
+2. **Análise com IA**
+   - Identificação de tipo de corpo
+   - Análise de paleta de cores
+   - Score de compatibilidade
+
+3. **Recomendações Personalizadas**
+   - Peças que valorizam o corpo
+   - Cores ideais
+   - Lojas e preços
+
+4. **Análise de Peças**
+   - Foto ou upload de roupas
+   - Análise instantânea
+   - Feedback detalhado
+
+## 🚀 Como Rodar
+
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📲 Deploy
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### GitHub Pages
+O projeto está configurado com GitHub Actions para deploy automático ao fazer push na branch `main`.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### Vercel
+```bash
+vercel
 ```
+
+## 🎨 Design System
+
+- **Cores Principais**: Orange (#F97316) e Purple (#8B5CF6)
+- **Tipografia**: Inter
+- **Componentes**: Mobile-first, touch-friendly
+- **Animações**: Suaves e responsivas
+
+## 📊 Métricas de Sucesso
+
+- Taxa de conclusão do onboarding: 70%+
+- Engajamento diário: 8+ minutos
+- Conversão free → premium: 3-5%
+- Retenção D7: 40%
+
+## 🤝 Time
+
+Desenvolvido para o Startup Weekend Goiânia 2025 com foco em diversidade e inclusão.

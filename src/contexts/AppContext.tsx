@@ -1,6 +1,7 @@
-import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { User, UserProfile, Recommendation } from '../types';
-import { mockUserProfile, generateRecommendations } from '../mock/data';
+import React, { createContext, useContext, useState } from 'react';
+import type { ReactNode } from 'react';
+import type { User, UserProfile, Recommendation } from '../types';
+import { generateRecommendations } from '../mock/data';
 
 interface AppContextType {
   user: User | null;

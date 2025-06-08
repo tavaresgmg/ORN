@@ -6,7 +6,7 @@ import { useApp } from '../contexts/AppContext';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
-  const { userProfile, recommendations, refreshRecommendations } = useApp();
+  const { recommendations, refreshRecommendations } = useApp();
   const [activeTab, setActiveTab] = useState('home');
   const [likedItems, setLikedItems] = useState<string[]>([]);
 

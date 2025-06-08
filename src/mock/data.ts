@@ -1,4 +1,4 @@
-import { BodyType, ColorPalette, ClothingItem, Recommendation } from '../types';
+import type { BodyType, ColorPalette, ClothingItem, Recommendation } from '../types';
 
 export const mockBodyTypes: Record<string, BodyType> = {
   curvy: {
