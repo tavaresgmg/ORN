@@ -13,7 +13,8 @@ import {
   Palette,
   Ruler,
   Star,
-  Crown
+  Crown,
+  BookOpen
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
@@ -40,6 +41,13 @@ const Profile: React.FC = () => {
           value: userProfile?.bodyType?.name || 'Curvilínea',
           color: 'text-purple-500',
           onClick: () => navigate('/profile/body-type')
+        },
+        {
+          icon: BookOpen,
+          label: 'Método Kibbe',
+          value: 'Aprenda mais',
+          color: 'text-indigo-500',
+          onClick: () => navigate('/kibbe-guide')
         }
       ]
     },
@@ -76,14 +84,14 @@ const Profile: React.FC = () => {
           icon: Settings,
           label: 'Configurações',
           value: '',
-          color: 'text-neutral-600',
+          color: 'text-secondary/60',
           onClick: () => navigate('/settings')
         },
         {
           icon: HelpCircle,
           label: 'Ajuda e Suporte',
           value: '',
-          color: 'text-neutral-600',
+          color: 'text-secondary/60',
           onClick: () => navigate('/help')
         }
       ]
@@ -144,16 +152,16 @@ const Profile: React.FC = () => {
         <div className="bg-white rounded-2xl shadow-sm p-4">
           <div className="grid grid-cols-3 divide-x divide-neutral-200">
             <div className="text-center">
-              <p className="text-2xl font-bold text-neutral-900">78%</p>
-              <p className="text-xs text-neutral-600">Acertos</p>
+              <p className="text-2xl font-bold text-secondary">78%</p>
+              <p className="text-xs text-secondary/70">Acertos</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-neutral-900">234</p>
-              <p className="text-xs text-neutral-600">Análises</p>
+              <p className="text-2xl font-bold text-secondary">234</p>
+              <p className="text-xs text-secondary/70">Análises</p>
             </div>
             <div className="text-center">
-              <p className="text-2xl font-bold text-neutral-900">4.8</p>
-              <p className="text-xs text-neutral-600 flex items-center justify-center gap-1">
+              <p className="text-2xl font-bold text-secondary">4.8</p>
+              <p className="text-xs text-secondary/70 flex items-center justify-center gap-1">
                 <Star className="w-3 h-3 fill-yellow-500 text-yellow-500" />
                 Rating
               </p>
@@ -171,7 +179,7 @@ const Profile: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3 + sectionIndex * 0.1 }}
           >
-            <h3 className="text-sm font-medium text-neutral-500 mb-3">{section.section}</h3>
+            <h3 className="text-sm font-medium text-secondary/50 mb-3">{section.section}</h3>
             <div className="bg-white rounded-xl overflow-hidden">
               {section.items.map((item, index) => (
                 <button
@@ -185,13 +193,13 @@ const Profile: React.FC = () => {
                     <div className={`w-10 h-10 bg-neutral-100 rounded-lg flex items-center justify-center ${item.color}`}>
                       <item.icon className="w-5 h-5" />
                     </div>
-                    <span className="font-medium text-neutral-900">{item.label}</span>
+                    <span className="font-medium text-secondary">{item.label}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     {item.value && (
-                      <span className="text-sm text-neutral-600">{item.value}</span>
+                      <span className="text-sm text-secondary/70">{item.value}</span>
                     )}
-                    <ChevronRight className="w-4 h-4 text-neutral-400" />
+                    <ChevronRight className="w-4 h-4 text-secondary/40" />
                   </div>
                 </button>
               ))}

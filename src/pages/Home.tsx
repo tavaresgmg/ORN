@@ -48,13 +48,13 @@ const Home: React.FC = () => {
             <User className="w-5 h-5 text-primary" />
           </div>
           <div>
-            <p className="text-sm text-neutral-600">Olá, Anna!</p>
-            <p className="text-xs text-neutral-500">Seu estilo: Curvilínea Quente</p>
+            <p className="text-sm text-secondary">Olá, Anna!</p>
+            <p className="text-xs text-secondary/70">Seu estilo: Curvilínea Quente</p>
           </div>
         </div>
         <div className="flex gap-2">
           <button onClick={() => navigate('/search')} className="p-2 bg-neutral-100 rounded-lg">
-            <Search className="w-5 h-5 text-neutral-700" />
+            <Search className="w-5 h-5 text-secondary" />
           </button>
           <div className="relative">
             <button onClick={() => navigate('/notifications')} className="p-2 bg-neutral-100 rounded-lg">
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
                   {unreadCount}
                 </div>
               )}
-              <Bell className="w-5 h-5 text-neutral-700" />
+              <Bell className="w-5 h-5 text-secondary" />
             </button>
           </div>
         </div>
@@ -76,7 +76,7 @@ const Home: React.FC = () => {
         transition={{ delay: 0.2 }}
         className="p-4"
       >
-        <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-4 text-white">
+        <div className="bg-gradient-to-r from-primary to-primary-dark rounded-2xl p-4 text-secondary">
           <div className="flex items-center justify-between mb-3">
             <div>
               <h3 className="font-semibold text-lg">Analise uma peça</h3>
@@ -86,7 +86,7 @@ const Home: React.FC = () => {
           </div>
           <button 
             onClick={() => navigate('/analyze')}
-            className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/30 transition-colors"
+            className="bg-white/20 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-medium hover:bg-white/30 transition-colors text-secondary"
           >
             Tirar foto agora
           </button>
@@ -103,18 +103,18 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-3 gap-3">
           <div className="bg-white rounded-xl p-3 text-center">
             <TrendingUp className="w-5 h-5 text-green-500 mx-auto mb-1" />
-            <p className="text-2xl font-bold text-neutral-900">78%</p>
-            <p className="text-xs text-neutral-600">Acertos</p>
+            <p className="text-2xl font-bold text-secondary">78%</p>
+            <p className="text-xs text-secondary/70">Acertos</p>
           </div>
           <div className="bg-white rounded-xl p-3 text-center">
             <Heart className="w-5 h-5 text-red-500 mx-auto mb-1" />
-            <p className="text-2xl font-bold text-neutral-900">47</p>
-            <p className="text-xs text-neutral-600">Favoritos</p>
+            <p className="text-2xl font-bold text-secondary">47</p>
+            <p className="text-xs text-secondary/70">Favoritos</p>
           </div>
           <div className="bg-white rounded-xl p-3 text-center">
             <ShoppingBag className="w-5 h-5 text-primary mx-auto mb-1" />
-            <p className="text-2xl font-bold text-neutral-900">12</p>
-            <p className="text-xs text-neutral-600">Compras</p>
+            <p className="text-2xl font-bold text-secondary">12</p>
+            <p className="text-xs text-secondary/70">Compras</p>
           </div>
         </div>
       </motion.div>
@@ -127,7 +127,7 @@ const Home: React.FC = () => {
           transition={{ delay: 0.4 }}
           className="flex items-center justify-between mb-4"
         >
-          <h2 className="text-xl font-bold text-neutral-900">Recomendado para você</h2>
+          <h2 className="text-xl font-bold text-secondary">Recomendado para você</h2>
           <button 
             onClick={refreshRecommendations}
             className="text-sm text-primary font-medium"
@@ -160,12 +160,12 @@ const Home: React.FC = () => {
                     className={`p-2 rounded-full backdrop-blur-sm transition-all ${
                       likedItems.includes(rec.item.id)
                         ? 'bg-red-500 text-white'
-                        : 'bg-white/80 text-neutral-700'
+                        : 'bg-white/80 text-secondary'
                     }`}
                   >
                     <Heart className={`w-5 h-5 ${likedItems.includes(rec.item.id) ? 'fill-current' : ''}`} />
                   </button>
-                  <button className="p-2 bg-white/80 backdrop-blur-sm rounded-full text-neutral-700">
+                  <button className="p-2 bg-white/80 backdrop-blur-sm rounded-full text-secondary">
                     <Share2 className="w-5 h-5" />
                   </button>
                 </div>
@@ -177,8 +177,8 @@ const Home: React.FC = () => {
               <div className="p-4">
                 <div className="flex items-start justify-between mb-2">
                   <div>
-                    <h3 className="font-semibold text-neutral-900">{rec.item.name}</h3>
-                    <p className="text-sm text-neutral-600">{rec.item.brand}</p>
+                    <h3 className="font-semibold text-secondary">{rec.item.name}</h3>
+                    <p className="text-sm text-secondary/70">{rec.item.brand}</p>
                   </div>
                   <p className="text-xl font-bold text-primary">
                     R$ {rec.item.price.toFixed(2)}
@@ -187,7 +187,7 @@ const Home: React.FC = () => {
 
                 <div className="space-y-2 mb-4">
                   {rec.reasons.map((reason, idx) => (
-                    <p key={idx} className="text-sm text-neutral-600 flex items-center gap-2">
+                    <p key={idx} className="text-sm text-secondary/80 flex items-center gap-2">
                       <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                       {reason}
                     </p>

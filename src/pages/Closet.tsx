@@ -186,7 +186,7 @@ const Closet: React.FC = () => {
                   <p className="text-xs text-neutral-600">{item.brand} • {item.size}</p>
                   <div className="flex gap-1 mt-2">
                     {item.tags.slice(0, 2).map(tag => (
-                      <span key={tag} className="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded-full">
+                      <span key={tag} className="text-xs bg-neutral-100 text-secondary/70 px-2 py-1 rounded-full">
                         {tag}
                       </span>
                     ))}
@@ -215,7 +215,7 @@ const Closet: React.FC = () => {
                   <p className="text-sm text-neutral-600">{item.brand} • {item.size} • {item.color}</p>
                   <div className="flex gap-1 mt-1">
                     {item.tags.map(tag => (
-                      <span key={tag} className="text-xs bg-neutral-100 text-neutral-600 px-2 py-1 rounded-full">
+                      <span key={tag} className="text-xs bg-neutral-100 text-secondary/70 px-2 py-1 rounded-full">
                         {tag}
                       </span>
                     ))}

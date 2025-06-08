@@ -8,6 +8,8 @@ import Closet from './pages/Closet';
 import Search from './pages/Search';
 import Profile from './pages/Profile';
 import Notifications from './pages/Notifications';
+import ProductDetail from './pages/ProductDetail';
+import KibbeGuide from './pages/KibbeGuide';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/search" element={<Search />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/notifications" element={<Notifications />} />
+          <Route path="/item/:id" element={<ProductDetail />} />
+          <Route path="/kibbe-guide" element={<KibbeGuide />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Router>

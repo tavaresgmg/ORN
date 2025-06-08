@@ -138,7 +138,7 @@ const Search: React.FC = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  className="bg-white rounded-xl overflow-hidden shadow-sm"
+                  className="bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer hover:shadow-md transition-shadow"
                   onClick={() => navigate(`/item/${item.id}`)}
                 >
                   <img
@@ -205,7 +205,7 @@ const Search: React.FC = () => {
               transition={{ delay: 0.1 }}
               className="mb-6"
             >
-              <h2 className="font-semibold text-neutral-900 mb-3 flex items-center gap-2">
+              <h2 className="font-semibold text-secondary mb-3 flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-primary" />
                 Em alta agora
               </h2>
