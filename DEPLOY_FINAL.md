@@ -1,4 +1,4 @@
-# 🚀 Deploy Final - StyleIA
+# 🚀 Deploy Final - ORN
 
 ## Opção 1: Deploy Automático via Script
 ```bash
@@ -21,14 +21,14 @@ Responda as perguntas:
 - Setup and deploy? **Y**
 - Which scope? **Selecione sua conta**
 - Link to existing project? **N**
-- Project name? **styleia-app**
+- Project name? **orn**
 - Directory? **./**
 - Override settings? **N**
 
 ### Passo 3: Obter URL
 Após o deploy, você receberá uma URL como:
-- https://styleia-app.vercel.app
-- https://styleia-app-[hash].vercel.app
+- https://orn.vercel.app
+- https://orn-[hash].vercel.app
 
 ## 📱 Gerar QR Code para Apresentação
 
@@ -52,7 +52,7 @@ Após o deploy, você receberá uma URL como:
 ## 🎯 URLs Importantes
 
 - **Produção**: [sua-url].vercel.app
-- **GitHub**: github.com/[seu-usuario]/StylistAI
+- **GitHub**: github.com/[seu-usuario]/ORN
 - **QR Generator**: qr-code-generator.com
 
 ## 💡 Dicas para o Pitch

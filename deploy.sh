@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Iniciando deploy do StyleIA..."
+echo "🚀 Iniciando deploy do ORN..."
 
 # Build do projeto
 echo "📦 Compilando projeto..."

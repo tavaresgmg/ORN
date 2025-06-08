@@ -1,11 +1,11 @@
-# 🎤 StyleIA - Guia para Pitch Startup Weekend
+# 🎤 ORN - Guia para Pitch Startup Weekend
 
 ## 📱 Demonstração do App (3 minutos)
 
 ### 1. **Abertura (30s)**
 - Mostrar tela Welcome com estatísticas impactantes
 - "96% das mulheres sentem insegurança ao escolher roupas"
-- "StyleIA resolve isso com IA personalizada"
+- "ORN resolve isso com IA personalizada"
 
 ### 2. **Onboarding (45s)**
 - Demonstrar coleta simples: altura, idade, fotos
@@ -86,7 +86,7 @@
 
 ### Slide 4: QR Code
 - QR Code centralizado
-- URL curta: styleia.app
+- URL curta: orn.app
 - Call to action
 
 ## ⚡ Respostas Rápidas para Jurados
@@ -123,7 +123,7 @@ vercel --prod
 
 ## 🏆 Mensagem Final
 
-"StyleIA não é apenas um app de moda. É sobre empoderar mulheres a se sentirem confiantes todos os dias. Com tecnologia acessível e inclusiva, transformamos insegurança em autoestima. Junte-se a nós nessa revolução!"
+"ORN não é apenas um app de moda. É sobre empoderar mulheres a se sentirem confiantes todos os dias. Com tecnologia acessível e inclusiva, transformamos insegurança em autoestima. Junte-se a nós nessa revolução!"
 
 ---
 

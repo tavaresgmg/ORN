@@ -1,16 +1,16 @@
-# 🚀 Instruções de Deploy - StyleIA
+# 🚀 Instruções de Deploy - ORN
 
 ## Deploy no GitHub Pages
 
 ### 1. Criar repositório no GitHub
 ```bash
-# No GitHub, criar novo repositório chamado "StylistAI"
+# No GitHub, criar novo repositório chamado "ORN"
 # Marcar como público
 ```
 
 ### 2. Conectar repositório local
 ```bash
-git remote add origin https://github.com/SEU_USUARIO/StylistAI.git
+git remote add origin https://github.com/SEU_USUARIO/ORN.git
 git branch -M main
 git push -u origin main
 ```
@@ -24,7 +24,7 @@ git push -u origin main
 
 ### 4. Acessar o app
 ```
-https://SEU_USUARIO.github.io/StylistAI/
+https://SEU_USUARIO.github.io/ORN/
 ```
 
 ## Deploy no Vercel
@@ -42,7 +42,7 @@ vercel
 # - Set up and deploy? Y
 # - Which scope? (selecionar sua conta)
 # - Link to existing project? N
-# - Project name? styleia-app
+# - Project name? orn
 # - Directory? ./
 # - Override settings? N
 ```
@@ -56,8 +56,8 @@ vercel --prod
 
 ### 1. Após deploy, usar o link gerado
 ```bash
-# GitHub Pages: https://SEU_USUARIO.github.io/StylistAI/
-# Vercel: https://styleia-app.vercel.app/
+# GitHub Pages: https://SEU_USUARIO.github.io/ORN/
+# Vercel: https://orn.vercel.app/
 ```
 
 ### 2. Gerar QR Code
@@ -71,7 +71,7 @@ vercel --prod
 ### Vite Config
 O arquivo `vite.config.ts` já está configurado com:
 ```typescript
-base: '/StylistAI/', // Para GitHub Pages
+base: '/ORN/', // Para GitHub Pages
 ```
 
 ### Manifest PWA
