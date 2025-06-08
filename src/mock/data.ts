@@ -97,7 +97,8 @@ export const mockClothingItems: ClothingItem[] = [
     ],
     rating: 4.8,
     tags: ['trabalho', 'formal', 'versátil'],
-    occasionType: ['work', 'formal']
+    occasionType: ['work', 'formal'],
+    description: 'Blazer estruturado com corte impecável, ideal para looks profissionais e elegantes. Tecido de alta qualidade com caimento perfeito.'
   },
   {
     id: '2',
@@ -113,7 +114,8 @@ export const mockClothingItems: ClothingItem[] = [
     ],
     rating: 4.5,
     tags: ['romântico', 'feminino', 'verão'],
-    occasionType: ['date', 'casual']
+    occasionType: ['date', 'casual'],
+    description: 'Vestido midi com estampa floral delicada, perfeito para ocasiões românticas. Tecido fluido que acompanha os movimentos.'
   },
   {
     id: '3',
@@ -130,7 +132,8 @@ export const mockClothingItems: ClothingItem[] = [
     ],
     rating: 4.3,
     tags: ['confortável', 'tendência', 'alongador'],
-    occasionType: ['casual', 'work']
+    occasionType: ['casual', 'work'],
+    description: 'Calça wide leg moderna e confortável, alonga a silhueta e traz elegância ao look. Tecido com ótimo caimento.'
   },
   {
     id: '4',
@@ -147,7 +150,8 @@ export const mockClothingItems: ClothingItem[] = [
     ],
     rating: 4.6,
     tags: ['básico', 'essencial', 'versátil'],
-    occasionType: ['casual', 'work']
+    occasionType: ['casual', 'work'],
+    description: 'Blusa clássica com decote V que valoriza o colo. Peça coringa que combina com tudo no guarda-roupa.'
   },
   {
     id: '5',
@@ -163,7 +167,8 @@ export const mockClothingItems: ClothingItem[] = [
     ],
     rating: 4.7,
     tags: ['elegante', 'movimento', 'midi'],
-    occasionType: ['work', 'formal', 'date']
+    occasionType: ['work', 'formal', 'date'],
+    description: 'Saia plissada midi que adiciona movimento e elegância ao visual. Cintura marcada e comprimento versátil.'
   }
 ];
 

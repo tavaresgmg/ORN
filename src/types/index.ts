@@ -61,6 +61,7 @@ export interface ClothingItem {
   rating?: number;
   tags: string[];
   occasionType?: OccasionType[];
+  description?: string;
 }
 
 export type ClothingCategory = 
