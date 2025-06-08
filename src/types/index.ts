@@ -9,7 +9,6 @@ export interface User {
 
 export interface UserProfile {
   height: number; // em cm
-  weight: number; // em kg
   age: number;
   measurements?: {
     bust?: number;

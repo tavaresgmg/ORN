@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Heart, Share2, ShoppingBag, Sparkles, TrendingUp, User, Search, Home as HomeIcon, Shirt } from 'lucide-react';
+import { Camera, Heart, Share2, ShoppingBag, TrendingUp, User, Search, Home as HomeIcon, Shirt, Bell } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
+import { useNotifications } from '../hooks/useNotifications';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const { recommendations, refreshRecommendations } = useApp();
+  const { unreadCount } = useNotifications();
   const [activeTab, setActiveTab] = useState('home');
   const [likedItems, setLikedItems] = useState<string[]>([]);
 
@@ -51,13 +53,17 @@ const Home: React.FC = () => {
           </div>
         </div>
         <div className="flex gap-2">
-          <button className="p-2 bg-neutral-100 rounded-lg">
+          <button onClick={() => navigate('/search')} className="p-2 bg-neutral-100 rounded-lg">
             <Search className="w-5 h-5 text-neutral-700" />
           </button>
           <div className="relative">
-            <button className="p-2 bg-neutral-100 rounded-lg">
-              <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-pulse" />
-              <Sparkles className="w-5 h-5 text-neutral-700" />
+            <button onClick={() => navigate('/notifications')} className="p-2 bg-neutral-100 rounded-lg">
+              {unreadCount > 0 && (
+                <div className="absolute -top-1 -right-1 w-5 h-5 bg-primary rounded-full text-white text-xs flex items-center justify-center font-medium">
+                  {unreadCount}
+                </div>
+              )}
+              <Bell className="w-5 h-5 text-neutral-700" />
             </button>
           </div>
         </div>

@@ -206,7 +206,6 @@ export const generateRecommendations = (
 
 export const mockUserProfile = {
   height: 165,
-  weight: 62,
   age: 32,
   measurements: {
     bust: 90,

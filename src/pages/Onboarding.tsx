@@ -21,7 +21,6 @@ const Onboarding: React.FC = () => {
 
   const [formData, setFormData] = useState({
     height: '',
-    weight: '',
     age: '',
     bust: '',
     waist: '',
@@ -58,7 +57,6 @@ const Onboarding: React.FC = () => {
     // Gerar perfil mockado baseado nos inputs
     const profile: UserProfile = {
       height: Number(formData.height) || 165,
-      weight: Number(formData.weight) || 62,
       age: Number(formData.age) || 32,
       measurements: {
         bust: Number(formData.bust) || 90,
@@ -115,18 +113,6 @@ const Onboarding: React.FC = () => {
                 />
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-neutral-700 mb-2">
-                  ⚖️ Peso (kg)
-                </label>
-                <input
-                  type="number"
-                  value={formData.weight}
-                  onChange={(e) => setFormData(prev => ({ ...prev, weight: e.target.value }))}
-                  className="input"
-                  placeholder="Ex: 62"
-                />
-              </div>
 
               <div>
                 <label className="block text-sm font-medium text-neutral-700 mb-2">
@@ -461,7 +447,7 @@ const Onboarding: React.FC = () => {
             <button
               onClick={handleNext}
               disabled={
-                (currentStep === 0 && (!formData.height || !formData.weight || !formData.age)) ||
+                (currentStep === 0 && (!formData.height || !formData.age)) ||
                 (currentStep === 1 && (!formData.bodyPhoto || !formData.facePhoto))
               }
               className="btn-primary w-full"
