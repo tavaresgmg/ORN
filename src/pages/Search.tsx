@@ -70,7 +70,7 @@ const Search: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50 safe-top safe-bottom pb-20">
+    <div className="min-h-screen bg-neutral-50 safe-top safe-bottom pb-24">
       {/* Search Header */}
       <div className="bg-white shadow-sm p-4">
         <div className="flex items-center gap-3 mb-4">

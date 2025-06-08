@@ -77,7 +77,7 @@ const Analyze: React.FC = () => {
 
   if (result) {
     return (
-      <div className="min-h-screen bg-neutral-50 safe-top safe-bottom">
+      <div className="min-h-screen bg-neutral-50 safe-top safe-bottom pb-24">
         <header className="bg-white shadow-sm p-4 flex items-center justify-between">
           <button onClick={() => navigate(-1)} className="p-2">
             <ArrowLeft className="w-6 h-6 text-neutral-700" />
