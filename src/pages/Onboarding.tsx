@@ -396,7 +396,7 @@ const Onboarding: React.FC = () => {
 
             <button
               onClick={finishOnboarding}
-              className="btn-primary w-full"
+              className="btn-primary w-full flex items-center justify-center"
             >
               Ver minhas recomendações
               <ArrowRight className="w-5 h-5 ml-2" />
@@ -450,7 +450,7 @@ const Onboarding: React.FC = () => {
                 (currentStep === 0 && (!formData.height || !formData.age)) ||
                 (currentStep === 1 && (!formData.bodyPhoto || !formData.facePhoto))
               }
-              className="btn-primary w-full"
+              className="btn-primary w-full flex items-center justify-center"
             >
               Próximo
               <ArrowRight className="w-5 h-5 ml-2" />
