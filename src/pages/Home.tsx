@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Heart, Share2, ShoppingBag, TrendingUp, User, Search, Home as HomeIcon, Shirt, Bell } from 'lucide-react';
+import { Camera, Heart, Share2, ShoppingBag, TrendingUp, User, Search, Bell } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import { useNotifications } from '../hooks/useNotifications';
+import BottomNavigation from '../components/BottomNavigation';
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const { recommendations, refreshRecommendations } = useApp();
   const { unreadCount } = useNotifications();
-  const [activeTab, setActiveTab] = useState('home');
   const [likedItems, setLikedItems] = useState<string[]>([]);
 
   const handleLike = (itemId: string) => {
@@ -212,37 +212,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* Bottom Navigation */}
-      <motion.nav 
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        className="fixed bottom-0 left-0 right-0 bg-white border-t border-neutral-200 safe-bottom"
-      >
-        <div className="grid grid-cols-5 gap-1 p-2">
-          {[
-            { id: 'home', icon: HomeIcon, label: 'Início' },
-            { id: 'search', icon: Search, label: 'Buscar' },
-            { id: 'scan', icon: Camera, label: 'Scan' },
-            { id: 'closet', icon: Shirt, label: 'Closet' },
-            { id: 'profile', icon: User, label: 'Perfil' }
-          ].map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => {
-                setActiveTab(tab.id);
-                if (tab.id === 'scan') navigate('/analyze');
-              }}
-              className={`flex flex-col items-center justify-center py-2 rounded-lg transition-colors ${
-                activeTab === tab.id
-                  ? 'text-primary bg-primary/10'
-                  : 'text-neutral-500'
-              }`}
-            >
-              <tab.icon className="w-5 h-5 mb-1" />
-              <span className="text-xs">{tab.label}</span>
-            </button>
-          ))}
-        </div>
-      </motion.nav>
+      <BottomNavigation />
     </div>
   );
 };

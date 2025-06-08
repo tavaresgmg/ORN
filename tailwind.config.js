@@ -8,26 +8,26 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#F97316',
-          light: '#FB923C',
-          dark: '#EA580C',
+          DEFAULT: '#E7C8C2', // Rosê suave
+          light: '#EDD5D0',
+          dark: '#DFB8B1',
         },
         secondary: {
-          DEFAULT: '#8B5CF6',
-          light: '#A78BFA',
-          dark: '#7C3AED',
+          DEFAULT: '#653201', // Marrom bombom
+          light: '#7A3D01',
+          dark: '#4A2401',
         },
         neutral: {
-          50: '#FAFAF9',
-          100: '#F5F5F4',
-          200: '#E7E5E4',
-          300: '#D6D3D1',
-          400: '#A8A29E',
-          500: '#78716C',
-          600: '#57534E',
-          700: '#44403C',
-          800: '#292524',
-          900: '#1C1917',
+          50: '#F6F1EC', // Bege areia claro
+          100: '#F3ECE4',
+          200: '#EDE4D9',
+          300: '#E0D5C7',
+          400: '#C5B5A3',
+          500: '#A89583',
+          600: '#8B7666',
+          700: '#6E5B4D',
+          800: '#4A3E33',
+          900: '#2D251D',
         }
       },
       fontFamily: {

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Search as SearchIcon, X, Filter, TrendingUp, Clock, Tag, Home, Camera, User, Shirt } from 'lucide-react';
+import { Search as SearchIcon, X, Filter, TrendingUp, Clock, Tag } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { mockClothingItems } from '../mock/data';
+import BottomNavigation from '../components/BottomNavigation';
 
 const trendingSearches = [
   'Blazer estruturado',
@@ -31,7 +32,6 @@ const popularTags = [
 
 const Search: React.FC = () => {
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState('search');
   const [searchQuery, setSearchQuery] = useState('');
   const [isSearching, setIsSearching] = useState(false);
   const [searchResults, setSearchResults] = useState<typeof mockClothingItems>([]);
@@ -266,40 +266,7 @@ const Search: React.FC = () => {
       </div>
 
       {/* Bottom Navigation */}
-      <motion.nav 
-        initial={{ y: 100 }}
-        animate={{ y: 0 }}
-        className="fixed bottom-0 left-0 right-0 bg-white border-t border-neutral-200 safe-bottom"
-      >
-        <div className="grid grid-cols-5 gap-1 p-2">
-          {[
-            { id: 'home', icon: Home, label: 'Início' },
-            { id: 'search', icon: SearchIcon, label: 'Buscar' },
-            { id: 'scan', icon: Camera, label: 'Scan' },
-            { id: 'closet', icon: Shirt, label: 'Closet' },
-            { id: 'profile', icon: User, label: 'Perfil' }
-          ].map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => {
-                if (tab.id === 'home') navigate('/home');
-                else if (tab.id === 'scan') navigate('/analyze');
-                else if (tab.id === 'closet') navigate('/closet');
-                else if (tab.id === 'profile') navigate('/profile');
-                else setActiveTab(tab.id);
-              }}
-              className={`flex flex-col items-center justify-center py-2 rounded-lg transition-colors ${
-                activeTab === tab.id
-                  ? 'text-primary bg-primary/10'
-                  : 'text-neutral-500'
-              }`}
-            >
-              <tab.icon className="w-5 h-5 mb-1" />
-              <span className="text-xs">{tab.label}</span>
-            </button>
-          ))}
-        </div>
-      </motion.nav>
+      <BottomNavigation />
     </div>
   );
 };
