@@ -1,0 +1,8 @@
+.github
+.git
+node_modules
+*.log
+.DS_Store
+.env*
+DEPLOY.md
+CLAUDE.md
