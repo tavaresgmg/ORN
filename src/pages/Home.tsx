@@ -206,7 +206,7 @@ const Home: React.FC = () => {
                     Ver detalhes
                   </button>
                   <button className="btn-secondary flex-1 py-3 text-sm">
-                    Try-on AR
+                    Provar Virtual
                   </button>
                 </div>
               </div>

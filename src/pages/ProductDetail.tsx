@@ -227,7 +227,7 @@ const ProductDetail: React.FC = () => {
               onClick={() => navigate('/analyze')}
               className="btn-secondary px-6"
             >
-              Try-on AR
+              Provar Virtual
             </button>
           </div>
         </div>
