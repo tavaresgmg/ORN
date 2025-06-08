@@ -16,7 +16,7 @@ export interface Notification {
 const mockNotifications: Notification[] = [
   {
     id: '1',
-    title: '🎉 Bem-vinda ao StyleIA!',
+    title: '🎉 Bem-vinda ao ORN!',
     message: 'Descubra roupas perfeitas para você com nossa IA',
     type: 'success',
     timestamp: new Date(),
@@ -75,8 +75,8 @@ export const useNotifications = () => {
   const showNotification = useCallback((title: string, options?: NotificationOptions) => {
     if ('Notification' in window && Notification.permission === 'granted') {
       new Notification(title, {
-        icon: '/logo-192.png',
-        badge: '/logo-192.png',
+        icon: '/logo.png',
+        badge: '/logo.png',
         ...options
       });
     }

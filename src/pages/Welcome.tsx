@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Welcome: React.FC = () => {
@@ -20,25 +20,15 @@ const Welcome: React.FC = () => {
           transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
           className="mb-8"
         >
-          <div className="w-24 h-24 bg-primary rounded-2xl flex items-center justify-center shadow-2xl">
-            <Sparkles className="w-12 h-12 text-white" />
-          </div>
+          <img src="/logo.png" alt="LORN" className="w-32 h-32 object-contain" />
         </motion.div>
 
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="text-4xl font-bold text-neutral-900 mb-4"
-        >
-          StyleIA
-        </motion.h1>
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7 }}
-          className="text-xl text-neutral-600 mb-12 max-w-xs"
+          className="text-xl text-neutral-600 mt-8 mb-12 max-w-xs"
         >
           Descubra roupas que valorizam <span className="text-primary font-semibold">SEU</span> corpo
         </motion.p>

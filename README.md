@@ -1,8 +1,8 @@
-# StyleIA - Seu Personal Stylist com IA 👗✨
+# ORN - Seu Personal Stylist com IA 👗✨
 
 ## 🚀 Sobre o Projeto
 
-StyleIA é um aplicativo mobile-first que usa inteligência artificial para recomendar roupas que valorizam o corpo de cada usuária. Desenvolvido para o Startup Weekend Goiânia 2025 - Diversidades.
+ORN é um aplicativo mobile-first que usa inteligência artificial para recomendar roupas que valorizam o corpo de cada usuária. Desenvolvido para o Startup Weekend Goiânia 2025 - Diversidades.
 
 ### 🎯 Problema que Resolvemos
 - 96% das mulheres se sentem inseguras ao escolher roupas

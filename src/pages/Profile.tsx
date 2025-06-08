@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { 
-  User, 
   Settings, 
   Bell, 
   Heart, 
@@ -117,8 +116,12 @@ const Profile: React.FC = () => {
         >
           <div className="flex items-center gap-4">
             <div className="relative">
-              <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center">
-                <User className="w-10 h-10 text-white" />
+              <div className="w-20 h-20 bg-white/20 rounded-full overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" 
+                  alt="Anna Silva" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <button className="absolute bottom-0 right-0 w-7 h-7 bg-white rounded-full flex items-center justify-center shadow-lg">
                 <Camera className="w-4 h-4 text-primary" />

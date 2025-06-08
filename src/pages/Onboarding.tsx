@@ -349,7 +349,7 @@ const Onboarding: React.FC = () => {
                 <Check className="w-10 h-10 text-white" />
               </motion.div>
               <h2 className="text-2xl font-bold text-neutral-900 mb-2">Análise concluída!</h2>
-              <p className="text-neutral-600">Seu perfil StyleIA está pronto</p>
+              <p className="text-neutral-600">Seu perfil ORN está pronto</p>
             </div>
 
             <div className="space-y-4">

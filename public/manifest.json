@@ -1,6 +1,6 @@
 {
-  "name": "StyleIA - Personal Stylist com IA",
-  "short_name": "StyleIA",
+  "name": "ORN - Personal Stylist com IA",
+  "short_name": "ORN",
   "description": "Descubra roupas que valorizam SEU corpo com inteligência artificial",
   "theme_color": "#E7C8C2",
   "background_color": "#F6F1EC",
@@ -10,13 +10,13 @@
   "start_url": "/",
   "icons": [
     {
-      "src": "/logo-192.png",
+      "src": "/logo.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo-512.png",
+      "src": "/logo.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

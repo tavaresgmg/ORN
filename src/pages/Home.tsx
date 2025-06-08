@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Camera, Heart, Share2, ShoppingBag, TrendingUp, User, Search, Bell } from 'lucide-react';
+import { Camera, Heart, Share2, ShoppingBag, TrendingUp, Search, Bell } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useApp } from '../contexts/AppContext';
 import { useNotifications } from '../hooks/useNotifications';
@@ -44,8 +44,12 @@ const Home: React.FC = () => {
         className="bg-white shadow-sm p-4 flex items-center justify-between"
       >
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-            <User className="w-5 h-5 text-primary" />
+          <div className="w-10 h-10 bg-primary/10 rounded-full overflow-hidden">
+            <img 
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" 
+              alt="Anna" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div>
             <p className="text-sm text-secondary">Olá, Anna!</p>

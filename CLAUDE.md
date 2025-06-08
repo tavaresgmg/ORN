@@ -1,7 +1,7 @@
-# StyleIA - Memória do Projeto
+# ORN - Memória do Projeto
 
 ## 📱 Sobre o Projeto
-StyleIA é um personal stylist com IA para o Startup Weekend Goiânia 2025 - Diversidades.
+ORN é um personal stylist com IA para o Startup Weekend Goiânia 2025 - Diversidades.
 
 ## 🛠️ Stack Tecnológica
 - **Frontend**: React + TypeScript + Vite

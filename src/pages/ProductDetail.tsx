@@ -97,7 +97,7 @@ const ProductDetail: React.FC = () => {
           <div className="bg-primary/10 rounded-xl p-3 flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-primary" />
-              <span className="font-semibold text-secondary">Match StyleIA</span>
+              <span className="font-semibold text-secondary">Match ORN</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl font-bold text-primary">{matchScore}/10</span>
