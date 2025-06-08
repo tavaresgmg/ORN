@@ -17,7 +17,7 @@ ORN é um aplicativo mobile-first que usa inteligência artificial para recomend
 
 ## 📱 Acesse Agora!
 
-🔗 **[https://tavaresgmg.github.io/styleia-app/](https://tavaresgmg.github.io/styleia-app/)**
+🔗 **[https://tavaresgmg.github.io/ORN/](https://tavaresgmg.github.io/ORN/)**
 
 Melhor experiência no celular! 📱
 
@@ -49,10 +49,10 @@ Melhor experiência no celular! 📱
 
 ```bash
 # Clone o repositório
-git clone https://github.com/tavaresgmg/styleia-app.git
+git clone https://github.com/tavaresgmg/ORN.git
 
 # Entre na pasta
-cd styleia-app
+cd ORN
 
 # Instale as dependências
 npm install
